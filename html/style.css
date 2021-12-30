@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.first{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 999;
+    font-family: 'ubuntu',sans-serif;
+    transition: all 0.3s ease;
+}
+.first .width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.first .logo a{
+    color: whitesmoke;
+    font-size: 35px;
+    font-weight: 600;
+}
+.first .logo a span{
+    color: crimson;
+    font-weight: 600px;
+}
+.first .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.first .menu li a{
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.first .menu li a:hover{
+    color: crimson;
+}
+/* menu button styling */
+.menu-btn{
+    color: whitesmoke;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+/* home section styling */
+.home{
+    display: flex;
+    background: url("images/Black-Wallpapers-02-1680-x-1050.jpg") no-repeat center;
+    height: 100vh;
+    color: whitesmoke;
+    min-height: 500px;
+    font-family: 'ubuntu',sans-serif;
+}
+.home .width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600px;
+    margin-left: -0px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500px;
+}
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: whitesmoke;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: crimson;
+    background: none;
+}
+/* about section styling */
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'poppins',sans-serif;
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu',sans-serif;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "Who i am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right span{
+    color: crimson;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: crimson;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 1px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: crimson;
+    background: none;
+}
+/* services section start */
+.service{
+    font-family: 'poppins',sans-serif;
+    background-color: black;
+}
+.service .service-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.service .title{
+    color: blanchedalmond;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu',sans-serif;
+}
+.service .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 215px;
+    height: 3px;
+    background: whitesmoke;
+    transform: translateX(-50%);
+}
+.service .title::after{
+    background-color: blacks;
+    content: "What I provide";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+.service .service-content{
+    color: blanchedalmond;
+    display: flexbox;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.service .service-content .card{
+    width: calc(30% - 20px);
+    background-color: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 50px;
+    transition: all 0.3s ease;
+}
+.service .service-content .card:hover{
+    background-color: crimson;
+}
+.service .service-content .card .box{
+    transition: all 0.3s ease;
+}
+.service .service-content .card:hover .box{
+    transform: scale(1.10);
+}
+.service .service-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.service .service-content .card:hover i{
+    color: whitesmoke;
+}
+.service .service-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+/* skill sectioin */
+.skill{
+    font-family: 'poppins',sans-serif;
+}
+.skill .title{
+    color: black;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu',sans-serif;
+}
+.skill .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 160px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+.skill .title::after{
+    background-color: blacks;
+    content: "what i know";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+}
+.skill .left{
+    font-family: 'poppins',sans-serif;
+}
+.skill .skill-content .column{
+    width: calc(50% - 30px);
+}
+.skill .skill-content .column .text{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.skill .skill-content .column p{
+    text-align: justify;
+}
+.skill .skill-content .column a{
+    display: inline-block;
+    background: crimson;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.skill .skill-content .column a:hover{
+    color: crimson;
+    background: none;
+}
+.column{
+    display: inline-block;
+}
+.skill .skill-content{
+    display: flex;
+    justify-content: center;
+}
+.skill .right{
+    font-family: 'poppins',sans-serif;
+}
+.skill .skill-content .right{
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.skill .skill-content .right .bars{
+    margin-bottom: 15px;
+}
+.skill .skill-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skill .skill-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skill .skill-content .right .line{
+    height: 5px;
+    width: 100%;
+    border-radius: 5px;
+    background: lightgray;
+    position: relative;
+}
+.skill .skill-content .right .line::before{
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skill-content .right .html::before{
+    width: 90%;
+}
+.skill-content .right .CSS::before{
+    width: 60%;
+}
+.skill-content .right .Javascript::before{
+    width: 30%;
+}
+.skill-content .right .C::before{
+    width: 50%;
+}
+.skill-content .right .cpp::before{
+    width: 70%;
+}
+/* team section stailing */
+.team{
+    background-color: black;
+    font-family: 'poppins',sans-serif;
+}
+.team .title{
+    color: whitesmoke;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu',sans-serif;
+}
+.team .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: whitesmoke;
+    transform: translateX(-50%);
+}
+.team .title::after{
+    background-color: blacks;
+    content: "Who with me";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+.team .carousel{
+    text-align: center;
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    font-family: 'ubuntu',sans-serif;
+    justify-content: space-around;
+}
+.team .carousel .card{
+    display: inline-block;
+    padding: 45px;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.30s ease;
+}
+.team .carousel .card:hover{
+    background: crimson;
+    border-radius: 15px;
+}
+.team .carousel .card .box{
+    color: blanchedalmond;
+    transition: all 0.30s ease;
+}
+.team .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.team .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border: 5px solid crimson;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.team .carousel .card:hover img{
+    border-color: #fff;
+}
+.team .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+/* contact section */
+.contact{
+    font-family: 'poppins',sans-serif;
+}
+.contact .width{
+    margin-bottom: 100px;
+}
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact .title{
+    color: black;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu',sans-serif;
+}
+.contact .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+.contact .title::after{
+    background-color: blacks;
+    content: "get in touch";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: whitesmoke;
+    transform: translateX(-50%);
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .fields .field-Email input,
+.contact .right form .fields .field-name input{
+    height: 45px;
+    width: 245px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'poppins', sans-serif;
+    margin-bottom: 15px;
+}
+.contact .right form .field-Email{
+    margin-left: 10px;
+}
+.contact .right form .field input{
+    height: 45px;
+    width: 500px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'poppins', sans-serif;
+    margin-bottom: 15px;
+}
+.contact .right form textarea{
+    height: 80px;
+    width: 500px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'poppins', sans-serif;
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .right form button{
+    height: 45px;
+    width: 240px;
+}
+.contact .right form button{
+    display: inline-block;
+    background: crimson;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.contact .right form button:hover{
+    color: crimson;
+    background: none;
+}
+footer{
+    font-family: 'poppins',sans-serif;
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
